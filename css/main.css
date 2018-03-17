@@ -1,0 +1,130 @@
+body{
+	background-color: #ffffff;
+}
+.heare
+{  
+	 display: block;
+	 height:100%;
+	 background:url(/img/main.png) no-repeat center; 
+  	 background-size: cover;
+}
+@font-face{
+	font-family: Montserrat-Light;
+	src: url('/fonts/Montserrat-Light.ttf');
+}
+@font-face{
+	font-family: Montserrat-Bold;
+	src: url('/fonts/Montserrat-Bold.ttf');
+}
+@font-face{
+	font-family: Montserrat-Regular;
+	src: url('/fonts/Montserrat-Regular.ttf');
+}
+@font-face{
+	font-family: lato-regular;
+	src: url('/fonts/lato-regular.ttf');
+}
+
+a.nav-link {
+	font-family: Montserrat-Light;
+	font-size:14px;
+	color:#ffffff;
+}
+a:hover.nav-link,
+a.nav-link.active {
+	color:#ffba00;
+	text-decoration: underline #ffba00;
+}
+.main-text{
+	font-family: Montserrat-Light;
+	font-size:18px;
+	color:#767676;
+}
+.first_cen{
+	color: #ffba00;
+	float: center;
+	font-size: 24px;
+	font-family: Montserrat-Bold;
+}
+.back2{
+	height:586px;
+	 background:url(/img/back2.png) no-repeat center; 
+  	 background-size: cover;
+}
+.big-w{
+	font-size: 72px;
+	font-family:  Montserrat-Light;
+	color:#ffba00;
+}
+.block-3p{
+	font-size: 24px;
+	font-family: Montserrat-Bold;
+	color:#ffba00;
+	margin-top: 100px;
+}
+.block3pl{
+	color:#767676;
+	font-family: Montserrat-Light;
+	font-size: 18px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+    font-family:Montserrat-Light;
+    color: #404040; 
+}
+th,td {
+ border: 1px solid #cbcbcb;
+ width: 160px;
+ text-align: center;
+}
+tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+.grey{
+	background-color: #f9f9f9;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.page__serviceitem__faq__item__toggle{
+	margin-bottom:7px;
+	display:block;
+	background-color:#f2f2f2;
+	padding:21px 0 21px 114px;
+	transition:all 10ms;
+	position:relative;
+	border-radius: 5px;
+	border:1px solid #cbcbcb;
+}
+.page__serviceitem__faq__item__toggle span{
+	position:relative;
+	display:inline-block;
+	width: 100%;
+}
+.page__serviceitem__faq__item__descr{
+	transition:all 150ms;
+	background-color:#FFF;
+	padding-left: 31px;
+	padding-top: 23px;
+	padding-bottom: 23px;
+	margin-right: 196px;
+	font-family: lato-regular;
+	font-size: 14px;
+	color: #767676;
+	width: 100%;
+	margin-bottom: 10px;
+	border:1px solid #cbcbcb;
+	border-radius: 5px;
+}
+.page__serviceitem__faq__item .collapse{
+	background-color:#FFF;
+	height: 60px;
+	width:100%;
+}
+#heading1{	
+	margin-left: 30px;
+	color:#767676;
+	font-size: 16px;
+	font-family: Montserrat-Bold;
+}
