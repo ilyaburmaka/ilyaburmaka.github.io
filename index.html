@@ -6,53 +6,58 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">		
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/fa-svg-with-js.css">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="heare">
-
+<div class="head">
 	<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-   
       <header class="masthead mb-auto">
       	<div class="container">
-       	<div class="col-md-auto" style="position: absolute;margin-top:5px;">
+       	<div class="col-md-auto logo">
        		<img src="img/bitcoinlg.png" alt="logo">
-       	<p style="color:#fff;float: right;font-size: 12px;font-family: Montserrat-Light;margin-left: 5px;line-height: 16px;">COIN<br><span style="font-family: Montserrat-Bold;color:#ffba00;font-size: 14px;">DOUBLER</span></p>
+       	<p>COIN<br><span>DOUBLER</span></p>
         </div>
-        <div style="margin-top: 31px;" class="inner"> 
-         	<nav class="nav nav-masthead justify-content-end">
-            	<a class="nav-link active" href="#">HOME</a>
-            	<a class="nav-link" href="#">HOW TO DOUBLE</a>
-            	<a class="nav-link" href="#">MOST RECENT</a>
-           		<a class="nav-link" href="#">QUESTIONS & ANSWERS</a>
-            	<a class="nav-link" href="#">TERMS & CONDITIONS</a>
-            	<a class="nav-link" href="#">CONTACT US</a>
+        <div class="inner"> 
+         	<nav id="menu" class="nav nav-masthead justify-content-end col-sm-12">
+            	<a class="nav-link active" href="#home">HOME</a>
+            	<a class="nav-link" href="#htd">HOW TO DOUBLE</a>
+            	<a class="nav-link" href="#mr">MOST RECENT</a>
+           		<a class="nav-link" href="#qanda">QUESTIONS & ANSWERS</a>
+            	<a class="nav-link" href="#terms">TERMS & CONDITIONS</a>
+            	<a class="nav-link" href="#contact">CONTACT US</a>
         	</nav>
       	</div>
-       	</div>
+       	</div>  
        	<div class="container">
-       	    <div class="row">
-     			<div style="display: block; margin: 0 auto;margin-top: 25%;">
-    	  			<img  src="img/bcon.png" width="60" style="margin-left: 30px;">
-    	 			<img src="img/lcon.png" width="60" style="margin-left:30px;">
-    	 			<img src="img/dcon.png" width="60" style="margin-left: 30px;">
+       	    <div  id="home" class="row">
+     			<div class="coin">
+    	  			<img src="img/bcon.png" width="60" >
+    	 			<img src="img/lcon.png" width="60" >
+    	 			<img src="img/dcon.png" width="60" >
 				</div>
 			</div>
 		</div>
-			<p class="big-w text-center ">DOUBLE YOUR COINS <br><span style="color:#ffffff;">IN JUST</span> 
-				<span style="font-family: Montserrat-Bold;">10 HOURS</span>
+			<p class="big-w text-center">DOUBLE YOUR COINS <br><span>IN JUST</span> 
+				<span class="sp">10 HOURS</span>
 			</p>
-			<div class="container" style="margin-bottom: 15%;">
+			<div class="forms container">
+			<form action="send.php" method="post">
 				<div class="row">
-					<button class="btn btn-warning col-md-3" style="display: block;margin-left: 100px;">SEND EMAIL </button>
-						<div class="col-md-7" style="box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);border-radius: 5px;background-color: #ffffff;margin-left: 10px;">
+					<button  class="btn btn-warning col-md-3">SEND EMAIL </button>
+						<div class="col-md-7">
+                         <i class="fa fa-append fa-comment" style="position: absolute;z-index: 100;font-size: 30px;color:#ffba00;margin-left: 13px;margin-top: 13px;"></i>
+                <input  class="form-control" type="text" name="email" style="height: 56px; position: relative;
+  display: block;padding-left: 50px;">
 						</div>
+					</form>
      		 	</div>
 			</div>
       	</header>
 	</div>
 </div>
 <div class="back2">
-	<div class="container">
+	<div id="htd" class="container">
 		<p class="first_cen text-center" style="padding-top:100px;">HOW TO DOUBLE YOUR BITCOINS?</p>
 		<div class="row text-center">
 			<p class="main-text ">Our automated system gathers information from the blockchain transfers and cryptocurrency exchanges to study and predict the<br> bitcoin price, our servers open and close thousands of transactions per minute, analyzing the price difference and transaction <br>fees, and use that information to generate profit.</p>
@@ -61,17 +66,17 @@
 		<img class="col-md-6 col-sm-12" src="img/MacBook.png" alt="mac" width=50% height=50% style="margin-top: 10px;">
 			<div class="col-md-6 col-sm-12">
 			<img  style="position: absolute;" src="img/Rectangle.png" alt="rectal" width=100% height=85% >
-				<div style="position: absolute;margin-left: 30%;margin-top: 10%">
-					<p><img src="img/4icon.png" style="margin-right: 20px;">Add your Bitcoin adress</p>
-					<p><img src="img/3icon.png" style="margin-right: 20px;">Open new deposit</p>
-					<p><img src="img/2icon.png" style="margin-right: 20px;">Start earn profit</p>
-					<p><img src="img/1icon.png" style="margin-right: 20px;">Automatic withdrawal</p>
+				<div class="twodiv" >
+					<p><img src="img/4icon.png">Add your Bitcoin adress</p>
+					<p><img src="img/3icon.png">Open new deposit</p>
+					<p><img src="img/2icon.png">Start earn profit</p>
+					<p><img src="img/1icon.png">Automatic withdrawal</p>
 				</div>
 			</div>
 	</div>
 	</div>
 </div>
-<div class="container">
+<div id="mr" class="container">
 	<p class="block-3p text-center">MOST RECENT BITCOIN DOUBLER TRANSACTIONS:</p>
 	<p class="block3pl text-center">Your investment will appear after confirmations from the network.</p>
 	<div class="row" style="margin-top: 100px;">
@@ -86,16 +91,16 @@
 		</div>
 		</div>
 	</div>
-	<div class="row" style="background-color:#404040;height:40px;margin-top: 50px;">
-	<ul style="color:#b4b4b4;font-family:Montserrat-Light;padding: 0 auto">
-		<li style="display: inline;margin-right: 33px;">All investment</li>
-		<li style="display: inline;margin-right: 33px;padding-top: 14px;">My investment</li>
-		<li style="display: inline;margin-right: 33px;padding-top: 14px;">Payouts</li>
+	<div class="row" style="background-color:#404040;margin-top: 50px;">
+	<ul style="color:#b4b4b4;font-family:Montserrat-Light;margin-bottom: 0;">
+		<li class="activecl">All investment</li>
+		<li>My investment</li>
+		<li>Payouts</li>
     </ul>
    </div>
-	<div class="row" style="margin-bottom: 100px;">
+	<div id="table" class="row" style="margin-bottom: 100px;">
    <table class="col" style="overflow-x:auto;">
-   <tr class="text-center" style="color: #fff;font-family:Montserrat-Regular;background-color: #5e5e5e;height: 55px;">
+   <tr class="text-center" style="color: #fff;font-family:Montserrat-Regular;background-color: #5e5e5e;height: 55px;border: 1px solid #cbcbcb;">
    	<th>DATE</th>
    	<th>CURRENCY</th>
    	<th>ADDRESS</th>
@@ -130,7 +135,7 @@
   </div>
 </div>
 	<div class="grey">
-<div class="container">
+<div id="qanda" class="container">
 	<p class="text-center" style="font-family: Montserrat-Bold;	font-size: 24px;color: #ffba00;">QUESTIONS & ANSWERS</p>
 	<p class="text-center" style="font-size:18px;font-family:  Montserrat-Light;color:#767676">Got Questions? We've Got Answers! We've compiled a list of the questions we get asked the most often.</p>
 	<div class="row" style="margin-top: 40px;">
@@ -219,7 +224,7 @@
 	</div>
 </div>
 	
-<div class="container" style="margin-top: 100px;">
+<div id="terms" class="container" style="margin-top: 100px;margin-bottom: 100px;">
 	<p class="text-center" style="font-family: Montserrat-Bold;	font-size: 24px;color: #ffba00;">TERMS & CONDITIONS</p>
 	<p class="text-center" style="font-size:18px;font-family:  Montserrat-Light;color:#767676;margin-bottom: 45px;">Please read the following terms carefully.</p>
 	<div class="row" style="font-size: 14px;font-family:  Montserrat-Light;color:#767676;line-height: 30px; ">
@@ -262,43 +267,43 @@ If you have any questions relating to the security and storage of your contact d
 	<br><br></div>
 </div>
 <div class="grey">
-	<div class="container">
+	<div id="contact" class="container">
 		<p class="text-center" style="font-family: Montserrat-Bold;	font-size: 24px;color: #ffba00;">CONTACT US</p>
 	<p class="text-center" style="font-size:18px;font-family:  Montserrat-Light;color:#767676">Please fill this form to contact our support. We'll get back to you within 24 hours<br>Thank you!</p>
 </div>
-<form action="#" class="form-horizontal">
+	<form action="send.php" method="post" class="form-horizontal">
 <div class="container">
 	<div class="row">
 		<div class="form-group col-md-6">
   			<label for="example-text-input" class="col-md-6 col-form-label" style="font-family: Montserrat-Light;color:#767676;font-size: 14px;">Contact Name<span style="color: red;">*</span></label>
   		<div class="col-md-12">
-    		<input class="form-control" type="text" value="" id="example-text-input" style="height: 45px;">
+    		<input name="namecontact" class="form-control" type="text" value="" id="example-text-input" style="height: 45px;background-color: #f9f9f9">
   		</div>
   	</div>
   		<div class="form-group col-md-6">
   			<label for="example-text-input" class="col-md-6 col-form-label" style="font-family: Montserrat-Light;color:#767676;font-size: 14px;">Contact Email<span style="color: red;">*</span></label>
   		<div class="col-md-12">
-    		<input class="form-control" type="text" value="" id="example-text-input" style="height: 45px;">
+    		<input  name="email" class="form-control" type="text" value="" id="example-text-input" style="height: 45px;background-color: #f9f9f9">
   		</div>
-		</div>
-		
+		</div>	
 	</div>
 	<div class="row">
 		<div class="form-group col-md-6">
   			<label for="example-text-input" class="col-md-6 col-form-label" style="font-family: Montserrat-Light;color:#767676;font-size: 14px;">Subject<span style="color: red;">*</span></label>
   		<div class="col-md-12">
-    		<input class="form-control" type="text" value="" id="example-text-input" style="height: 45px;">
+    		<input name="sub" class="form-control" type="text" value="" id="example-text-input" style="height: 45px;background-color: #f9f9f9">
 
-		<button class="col-md-6 btn btn-warning" style="height: 45px;margin-top: 41px;color:#ffffff;font-family: Montserrat-Bold;">Submit</button>
+		<button  class="col-md-6 btn btn-warning" style="height: 45px;margin-top: 41px;color:#ffffff;font-family: Montserrat-Bold;">Submit</button>
   		<button class="col-md-5 btn btn-warning" style="margin-left: 38px;height: 45px;margin-top: 41px;background-color: #f9f9f9;color:#767676;border-color:#cfcfcf; font-family: Montserrat-Light;">Cancel</button>
   		</div>
   	</div>
   		<div class="form-group col-md-6">
   			<label for="example-text-input" class="col-md-6 col-form-label" style="font-family: Montserrat-Light;color:#767676;font-size: 14px;">Message<span style="color: red;">*</span></label>
   		<div class="col-md-12">
-  			<textarea class="form-control" id="message" name="message" rows="5"></textarea>
+  			<textarea class="form-control" id="message" name="message" rows="5" style="background-color: #f9f9f9"></textarea>
   		</div>
 		</div>
+	</form>
 	</div>
 	</div>
 	</div>
@@ -316,8 +321,18 @@ If you have any questions relating to the security and storage of your contact d
 		<p>Copyrights @ 2017. All Rights Reserved</p>
 	</div>
 </footer>
-
+  <script src="js/fontawesome.min.js"></script>
 	<script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+ $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 2500);
+    });
+});
+</script>
 </body>
 </html>

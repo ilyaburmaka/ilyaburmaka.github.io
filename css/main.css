@@ -1,12 +1,68 @@
 body{
 	background-color: #ffffff;
 }
-.heare
+.head
 {  
-	 display: block;
-	 height:100%;
-	 background:url(/img/main.png) no-repeat center; 
-  	 background-size: cover;
+	display: block;
+	height:100%;
+	background:url(/img/main.png) no-repeat center; 
+  	background-size: cover;
+}
+.col-md-auto.logo{
+	position: absolute;
+	margin-top:5px;
+}
+.logo p{
+	color:#fff;
+	float: right;
+	font-size: 12px;
+	font-family: Montserrat-Light;
+	margin-left: 5px;
+	line-height: 16px;
+}
+.logo span{
+	font-family: Montserrat-Bold;
+	color:#ffba00;
+	font-size: 14px;
+}
+.inner{
+	margin-top: 31px;
+}
+.coin{
+	display: block;
+	margin: 0 auto;
+	margin-top: 25%;
+}
+.coin img{
+	margin-left: 30px;
+}
+.big-w span{
+	color:#ffffff;
+}
+span.sp{
+	font-family: Montserrat-Bold;
+	color:#ffba00;
+}
+.forms.container{
+	margin-bottom: 15%;
+}
+.btn.btn-warning.col-md-3{
+	display: block;
+	margin-left: 100px;
+	font-family: Montserrat-Bold;
+	font-size: 18px;
+
+}
+.twodiv{
+	position: absolute;
+	margin-left: 30%;
+	margin-top: 10%;
+}
+.twodiv img{
+	margin-right: 20px;
+}
+.bluandyel{
+	width: 100%;height: 125px;background: #01a7a5;display: block;margin-left: -15px;
 }
 @font-face{
 	font-family: Montserrat-Light;
@@ -127,4 +183,21 @@ tr:nth-child(even){
 	color:#767676;
 	font-size: 16px;
 	font-family: Montserrat-Bold;
+}
+li {
+	width:161px;
+	display: inline-block;
+	margin-right: 10px;
+	padding-top: 9px;
+	padding-left: 25px;
+	height:39px;
+	}
+.activecl{
+	border:1px solid #cbcbcb;
+	color:#ffba00;
+	margin-left: -40px;
+}
+tr th 
+{
+	border: none;
 }
