@@ -48,7 +48,7 @@ span.sp{
 }
 .btn.btn-warning.col-md-3{
 	display: block;
-	margin-left: 100px;
+	margin-left:9%;
 	font-family: Montserrat-Bold;
 	font-size: 18px;
 
@@ -201,10 +201,20 @@ tr th
 {
 	border: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   #chto_ne_pozavivat {
     visibility: hidden;
     display: none;
   }
 }
-
+@media screen and (max-width: 768px) {
+  #menu{
+    text-align: center;
+       outline: none;
+  	display: block;
+  }
+  .btn.btn-warning.col-md-3{
+	margin-left:0;
+	margin-bottom: 10px;
+}
+}
