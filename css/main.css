@@ -54,7 +54,6 @@ span.sp{
 
 }
 .twodiv{
-	position: absolute;
 	margin-left: 30%;
 	margin-top: 10%;
 }
@@ -217,4 +216,19 @@ tr th
 	margin-left:0;
 	margin-bottom: 10px;
 }
+
+ .twodiv{
+ position: relative;
+ margin-left: 22%;
+}
+.rectangle{
+	height: 100%;
+	width: 95%;
+}
+.back2{
+	width: 100%;
+	height: 100%;
+
+}
+
 }
