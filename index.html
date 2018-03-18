@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">		
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/fa-svg-with-js.css">
 		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -14,7 +13,7 @@
 	<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
       	<div class="container">
-       	<div class="col-md-auto logo">
+       <div id="chto_ne_pozavivat" class="col-md-auto logo col-sm-12">
        		<img src="img/bitcoinlg.png" alt="logo">
        	<p>COIN<br><span>DOUBLER</span></p>
         </div>
@@ -44,7 +43,7 @@
 			<div class="forms container">
 			<form action="send.php" method="post">
 				<div class="row">
-					<button  class="btn btn-warning col-md-3">SEND EMAIL </button>
+					<button  class="btn btn-warning col-md-3 col-sm-12">SEND EMAIL </button>
 						<div class="col-md-7">
                          <i class="fa fa-append fa-comment" style="position: absolute;z-index: 100;font-size: 30px;color:#ffba00;margin-left: 13px;margin-top: 13px;"></i>
                 <input  class="form-control" type="text" name="email" style="height: 56px; position: relative;
@@ -98,8 +97,10 @@
 		<li>Payouts</li>
     </ul>
    </div>
-	<div id="table" class="row" style="margin-bottom: 100px;">
-   <table class="col" style="overflow-x:auto;">
+  
+	<div id="table" class="row table-responsive " style="margin-bottom: 100px;">
+   <table class="col " style="overflow-x:auto;">
+   
    <tr class="text-center" style="color: #fff;font-family:Montserrat-Regular;background-color: #5e5e5e;height: 55px;border: 1px solid #cbcbcb;">
    	<th>DATE</th>
    	<th>CURRENCY</th>
@@ -134,6 +135,7 @@
   </table>
   </div>
 </div>
+
 	<div class="grey">
 <div id="qanda" class="container">
 	<p class="text-center" style="font-family: Montserrat-Bold;	font-size: 24px;color: #ffba00;">QUESTIONS & ANSWERS</p>
@@ -274,32 +276,32 @@ If you have any questions relating to the security and storage of your contact d
 	<form action="send.php" method="post" class="form-horizontal">
 <div class="container">
 	<div class="row">
-		<div class="form-group col-md-6">
-  			<label for="example-text-input" class="col-md-6 col-form-label" style="font-family: Montserrat-Light;color:#767676;font-size: 14px;">Contact Name<span style="color: red;">*</span></label>
-  		<div class="col-md-12">
+		<div class="form-group col-md-6 col-sm-12">
+  			<label for="example-text-input" class="col-md-6 col-form-label col-sm-12" style="font-family: Montserrat-Light;color:#767676;font-size: 14px;">Contact Name<span style="color: red;">*</span></label>
+  		<div class="col-md-12 col-sm-12">
     		<input name="namecontact" class="form-control" type="text" value="" id="example-text-input" style="height: 45px;background-color: #f9f9f9">
   		</div>
   	</div>
-  		<div class="form-group col-md-6">
-  			<label for="example-text-input" class="col-md-6 col-form-label" style="font-family: Montserrat-Light;color:#767676;font-size: 14px;">Contact Email<span style="color: red;">*</span></label>
-  		<div class="col-md-12">
+  		<div class="form-group col-md-6 col-sm-12">
+  			<label for="example-text-input" class="col-md-6 col-form-label col-sm-12" style="font-family: Montserrat-Light;color:#767676;font-size: 14px;">Contact Email<span style="color: red;">*</span></label>
+  		<div class="col-md-12 col-sm-12">
     		<input  name="email" class="form-control" type="text" value="" id="example-text-input" style="height: 45px;background-color: #f9f9f9">
   		</div>
 		</div>	
 	</div>
 	<div class="row">
-		<div class="form-group col-md-6">
-  			<label for="example-text-input" class="col-md-6 col-form-label" style="font-family: Montserrat-Light;color:#767676;font-size: 14px;">Subject<span style="color: red;">*</span></label>
-  		<div class="col-md-12">
+		<div class="form-group col-md-6 col-sm-12">
+  			<label for="example-text-input" class="col-md-6 col-form-label col-sm-12" style="font-family: Montserrat-Light;color:#767676;font-size: 14px;">Subject<span style="color: red;">*</span></label>
+  		<div class="col-md-12 col-sm-12">
     		<input name="sub" class="form-control" type="text" value="" id="example-text-input" style="height: 45px;background-color: #f9f9f9">
 
-		<button  class="col-md-6 btn btn-warning" style="height: 45px;margin-top: 41px;color:#ffffff;font-family: Montserrat-Bold;">Submit</button>
-  		<button class="col-md-5 btn btn-warning" style="margin-left: 38px;height: 45px;margin-top: 41px;background-color: #f9f9f9;color:#767676;border-color:#cfcfcf; font-family: Montserrat-Light;">Cancel</button>
+		<button  class="col-md-6 btn btn-warning col-sm-12" style="height: 45px;margin-top: 41px;color:#ffffff;font-family: Montserrat-Bold;">Submit</button>
+  		<button class="col-md-5 btn btn-warning col-sm-12" style="float:right;height: 45px;margin-top: 41px;background-color: #f9f9f9;color:#767676;border-color:#cfcfcf; font-family: Montserrat-Light;">Cancel</button>
   		</div>
   	</div>
-  		<div class="form-group col-md-6">
-  			<label for="example-text-input" class="col-md-6 col-form-label" style="font-family: Montserrat-Light;color:#767676;font-size: 14px;">Message<span style="color: red;">*</span></label>
-  		<div class="col-md-12">
+  		<div class="form-group col-md-6 col-sm-12">
+  			<label for="example-text-input" class="col-md-6 col-form-label col-sm-12" style="font-family: Montserrat-Light;color:#767676;font-size: 14px;">Message<span style="color: red;">*</span></label>
+  		<div class="col-md-12 col-sm-12">
   			<textarea class="form-control" id="message" name="message" rows="5" style="background-color: #f9f9f9"></textarea>
   		</div>
 		</div>
@@ -311,17 +313,16 @@ If you have any questions relating to the security and storage of your contact d
 </div><!--grey-->
 <footer>
 	<div class="container">
-		<div class="row">
-			<div class="col"><img style="float: right;margin-right: 50px;" src="img/accredited-business.png.png" alt="p1" width="209"></div>
-			<div class="col-md-auto"><img style="margin-top: 51px;" src="img/etrust.png.png" alt="p2" width=179 ></div>
-			<div class="col"><img style="margin-top: 40px;margin-left: 25px;" src="img/imgnortonsiteseal.png.png" alt="p3" width=164></div>
+		<div class="row col-sm-12">
+			<div class="col"><img style="display: block;margin: 0 auto;" src="img/accredited-business.png.png" alt="p1" width="209"></div>
+			<div class="col-md-auto"><img style="padding-top: 51px;display: block;margin: 0 auto;" src="img/etrust.png.png" alt="p2" width=179 ></div>
+			<div class="col"><img style="display: block;margin: 0 auto;padding-top: 40px" src="img/imgnortonsiteseal.png.png" alt="p3" width=164></div>
 		</div>
 	</div>
 <div style="background-color: #252525;height: 100%;width:100%;color: #767676;font-family: Montserrat-Light;text-align: center;padding-top: 18px;">
 		<p>Copyrights @ 2017. All Rights Reserved</p>
 	</div>
 </footer>
-  <script src="js/fontawesome.min.js"></script>
 	<script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">

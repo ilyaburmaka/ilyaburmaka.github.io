@@ -201,3 +201,10 @@ tr th
 {
 	border: none;
 }
+@media screen and (max-width: 600px) {
+  #chto_ne_pozavivat {
+    visibility: hidden;
+    display: none;
+  }
+}
+
